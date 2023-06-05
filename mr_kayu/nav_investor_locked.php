@@ -10,12 +10,12 @@
   </head>
   <body>
     <nav class="nav">
-      <a href="awaiting_invest.php" class="nav-link"><i class="bi bi-list-task"></i> List Investasimu</a>
-      <a href="index_investor.php" class="nav-link"><i class="bi bi-currency-exchange"></i> Invest</a>
-      <a href="deskripsi.php" class="nav-link"><i class="bi bi-journal-text"></i> Deskripsi</a>
+      <a href="#" class="nav-link"><i class="bi bi-list-task"></i> List Investasimu <i class="bi bi-lock-fill"></i></a>
+      <a href="#" class="nav-link"><i class="bi bi-currency-exchange"></i> Invest <i class="bi bi-lock-fill"></i></a>
+      <a href="#" class="nav-link"><i class="bi bi-journal-text"></i> Deskripsi <i class="bi bi-lock-fill"></i></a>
       <a style="padding-left:auto; margin-left:auto">
       <a style="text-decoration:underline; color:blue" href="logout.php"  class="nav-link" onclick="return confirm('Apakah yakin ingin keluar?')"><i class="bi bi-box-arrow-left"></i> Logout</a>
-      <a href="profile.php" class="nav-link"><i class="bi bi-person-circle"></i> Profile</a>
+      <a href="profile_dashboard.php" class="nav-link"><i class="bi bi-person-circle"></i> Profile</a>
       </a>
     </nav>
     <script src="js/script.js"></script>

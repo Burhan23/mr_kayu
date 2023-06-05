@@ -27,7 +27,11 @@ $check = $select->checkUpgradeInformation($user['id']);
 
     <title>Mr.Kayu:Home</title>
 </head>
-<?php include 'nav_pengrajin.php' ?>
+<?php if ($user['role'] == '1') { ?>
+<?php include 'nav_pengrajin_locked.php' ?>
+<?php } elseif ($user['role'] == '2') { ?>
+<?php include 'nav_investor_locked.php' ?>
+<?php } ?>
 <body style="background-image: url('css/darkbrown3.png'); background-size:cover;">
     
     

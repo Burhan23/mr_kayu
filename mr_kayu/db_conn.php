@@ -4,7 +4,7 @@ class database
 	public $host = "localhost";
 	public $username = "root";
 	public $pass = "";
-	public $db = "prototype";
+	public $db = "mr_kayu";
 	public $connect;
 
 

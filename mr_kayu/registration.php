@@ -28,17 +28,17 @@ if(!empty($_SESSION["id"])){
     <form style="margin-bottom:20px;" action="proses.php?aksi=regist" enctype="multipart/form-data" method="post" autocomplete="off">
     <h2>Registration</h2>
       <label for="">Name : </label>
-      <input type="text" class="form-control" name="fname" required value="" maxlength="50"> <br>
+      <input type="text" class="form-control" name="fname" required value="" minlength="3" maxlength="50"> <br>
       <label for="">Username : </label>
-      <input type="text" class="form-control" name="username" required value="" maxlength="50"> <br>
+      <input type="text" class="form-control" name="username" required value="" minlength="3" maxlength="50"> <br>
       <label for="">Email : </label>
-      <input type="email" class="form-control" name="email" required value="" maxlength="50"> <br>
+      <input type="email" class="form-control" name="email" required value="" minlength="10" maxlength="50"> <br>
       <label for="">Password : </label>
-      <input type="password" class="form-control" name="password" required value="" maxlength="8"> <br>
+      <input type="password" class="form-control" name="password" required value="" minlength="3" maxlength="8"> <br>
       <label for="">Confirm Password : </label>
-      <input type="password" class="form-control" name="confirmpassword" required value="" maxlength="8"> <br>
+      <input type="password" class="form-control" name="confirmpassword" required value="" minlength="3" maxlength="8"> <br>
       <label for="">Nomer Telepon : </label>
-      <input type="number" class="form-control" name="no_telp" required value="" maxlength="15"> <br>
+      <input type="number" class="form-control" name="no_telp" required value="" minlength="11" maxlength="15"> <br>
 		  <label for="">Profile Picture</label>
 		  <input type="file" class="form-control" name="pp">
       <label>Role : </label>

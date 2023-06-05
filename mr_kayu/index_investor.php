@@ -39,9 +39,6 @@ else{
         <label style="font-size: 20px;">
             Daftar Investasi
         </label>
-        <label style="font-size: 20px; padding-left:auto">
-            Daftar Investasi
-        </label>
             <table class="rwd-table">
                 <thead>
                     <tr style="border-bottom: 5px;">

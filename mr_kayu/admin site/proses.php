@@ -44,14 +44,6 @@ if($aksi == "tambah"){
 	$topup->removeThisRow($_REQUEST['id']);
    	header("location:approval_topup.php");
 
-} elseif($aksi == "invest"){
-	$detail = $specify->dataUser($_GET['username']);
-	foreach ($detail as $akun){
-		$jumlah_dana = (int)$_POST['jumlah_dana'];
-
-		$invest->investThisUser($_POST['email_investor'],$_POST['username_investor'],$_POST['nik_investor'],$jumlah_dana,$_POST['nama_pengrajin']);
-		header("location:index_investor.php");
-	}
 } elseif ($aksi == "valid"){
 	$upgrade->checkForValidation($_REQUEST['id_users'],$_REQUEST['npwp'],$_REQUEST['nik'],$_REQUEST['no_rekening'],$_REQUEST['deskripsi']);
 	$upgrade->removeThisRow($_REQUEST['id']);

@@ -51,7 +51,7 @@ else{
         <label style="width:100px"for="Bank" class="form-input-label">Bank</label>
       <div></div>
       <label for="">Nomer Gopay/Dana/Rekening Bank : </label>
-      <input type="text" class="form-control" name="nomer" required value=""> <br>
+      <input type="text" class="form-control" name="nomer" required value="" minlength="8"> <br>
       <label for="">Investor yang dituju : </label>
       <input type="text" class="form-control" name="email_investor" readonly value="<?php echo $investor['email'] ?>"> <br>
 	  <label for="">Bukti Pembayaran(dalam bentuk gambar)</label>

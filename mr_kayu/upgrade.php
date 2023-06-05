@@ -28,7 +28,7 @@ else{
     <style>.kembali{margin-top: 10px; margin-bottom: 10px;}</style>
     <title>Update</title>
 </head>
-<body style="background-image: url('css/editbackgound.jpeg'); background-size:cover;">
+<body style="background-image: url('css/form2.png'); background-size:cover;">
 
 <h2>Lengkap Informasi Akun</h2>
     <?php
@@ -45,22 +45,25 @@ else{
     <input type="hidden" name="id" value="<?php echo $akun['id'] ?>">
         <div class="mb-3">
             <label for="nama_product" class="form-label">NPWP</label>
-            <input type="text" class="form-control" id="npwp" name="npwp" placeholder="NPWP .." value="" maxlength="15">
+            <input type="text" class="form-control" id="npwp" name="npwp" placeholder="NPWP .." value="" minlength="10" maxlength="15">
         </div>
         <div class="mb-3">
             <label for="nama_product" class="form-label">NIK</label>
-            <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK .." value="" maxlength="15">
+            <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK .." value="" minlength="10" maxlength="15">
         </div>
         <div class="mb-3">
             <label for="nama_product" class="form-label">No Rekening</label>
-            <input type="text" class="form-control" id="no_rekening" name="no_rekening" placeholder="Nomer Rekening .." value="" maxlength="30">
+            <input type="text" class="form-control" id="no_rekening" name="no_rekening" placeholder="Nomer Rekening .." value="" minlength="8" maxlength="30">
         </div>
          <div class="mb-3">
             <label for="bukti_ktp" class="form-label">Bukti Foto Ktp + diri sendiri</label>
             <div style="font-size: 20px; color:bisque; font-weight:bold"> Contoh </div>
             <img src="default/bukti.png">
             <div style="font-size: 20px; color:bisque; font-weight:bold"> Ketentuan : Foto harus jelas agar dapat diidentifikasi admin </div>
-            <input type="file" id="bukti_ktp" name="bukti_ktp" accept="image/jpg, image/png, image/jpeg">
+            <img style="min-width:150px;min-height:150px; max-width:400px; max-height:300px; background-image: url('progres/none.png'); background-size: cover; "id="gambar" src="#" alt=""/>
+            <div>
+            <input style="color: white;" type="file" id="filegambar" name="bukti_ktp" accept="image/jpg, image/png, image/jpeg">
+            </div>
         </div>
         <input type="submit" class="btn btn-primary" value="Simpan" >
         
@@ -68,4 +71,5 @@ else{
     <?php } ?>	
     
 </body>
+<script src="js/image-upload.js"></script>
 </html>

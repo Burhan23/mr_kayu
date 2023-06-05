@@ -55,12 +55,14 @@ $detail = $select->selectProgresById($user['id']);
                 <tbody>
                 <?php
                     $id = 1;
+                    $show = 0;
                         foreach ($detail as $akun) {
                             $produk = $select->selectProductById($akun['id_produk']);
                             $sekarang = $date->tanggalIndonesia($akun['tanggal_mulai']);
                             $prediksi = $date->tanggalIndonesia($akun['tanggal_selesai']);
                             if ($akun['status'] == '100') {
                             $record = $date->tanggalIndonesia($akun['record']);
+                            $show = 1;
                     ?>
                         <tr style="border:1px solid green;">
                             <td><?php echo $id++; ?></td>
@@ -72,7 +74,16 @@ $detail = $select->selectProgresById($user['id']);
                             <td>
                             </td>
                         </tr>
-            <?php }} ?>
+            <?php }} if ($show==0) { ?>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+            <?php } ?>
                 </tbody>
             </table>
         </div>

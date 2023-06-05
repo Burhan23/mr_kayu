@@ -40,19 +40,19 @@ else{
     <input type="hidden" name="id" value="<?php echo $akun['id'] ?>">
         <div class="mb-3">
             <label for="nama_product" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email .." value="<?php echo $akun['email'] ?>" required maxlength="50">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email .." value="<?php echo $akun['email'] ?>" required minlength="3" maxlength="50">
         </div>
         <div class="mb-3">
             <label for="nama_product" class="form-label">Username</label>
-            <input type="text" class="form-control" id="username" name="username" placeholder="Username .." value="<?php echo $akun['username'] ?>" required maxlength="50" >
+            <input type="text" class="form-control" id="username" name="username" placeholder="Username .." value="<?php echo $akun['username'] ?>" required minlength="3" maxlength="50" >
         </div>
         <div class="mb-3">
             <label for="deskripsi" class="form-label">Password</label>
-            <input type="password" class="form-control" id="deskripsi" name="password" placeholder="..." value="<?php echo $akun['password'] ?>" required maxlength="8" >
+            <input type="password" class="form-control" id="deskripsi" name="password" placeholder="..." value="<?php echo $akun['password'] ?>" required minlength="3" maxlength="8" >
          </div>
          <div class="mb-3">
             <label for="deskripsi" class="form-label">Konfirmasi Password Lama</label>
-            <input type="password" class="form-control" id="deskripsi" name="old_password" placeholder="..." value="" required maxlength="8" >
+            <input type="password" class="form-control" id="deskripsi" name="old_password" placeholder="..." value="" required minlength="3" maxlength="8" >
          </div>
         <input type="submit" class="btn btn-primary" value="Simpan">
     </form>

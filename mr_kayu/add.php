@@ -46,18 +46,18 @@ else{
         <form action="proses.php?id_users=<?php echo $user['id'] ?>&aksi=tambah" enctype="multipart/form-data" method="post">
             <div class="mb-3">
                 <label for="nama_product" class="form-label">Nama Produk</label>
-                <input type="text" class="form-control" id="nama_product" name="nama_product" placeholder="Nama product .." required>
+                <input type="text" class="form-control" id="nama_product" name="nama_product" placeholder="Nama product .." required minlength="3" minlength="50">
             </div>
             <div class="mb-3">
                 <img style="min-width:150px;min-height:150px; max-width:400px; max-height:300px; background-image: url('progres/none.png'); background-size: cover; "id="gambar" src="#" alt=""/>
             </div>
             <div class="mb-3">
                 <label for="gambar" class="form-label">Gambar</label>
-                <input type="file" id="filegambar" name="gambar" accept="image/jpg, image/png, image/jpeg">
+                <input style="color: white;" type="file" id="filegambar" name="gambar" accept="image/jpg, image/png, image/jpeg">
             </div>
             <div class="mb-3">
                 <label for="deskripsi" class="form-label">Deskripsi</label>
-                <input type="text" class="form-control" id="deskripsi" name="deskripsi" placeholder="Deskripsi .." required>
+                <input type="text" class="form-control" id="deskripsi" name="deskripsi" placeholder="Deskripsi .." required minlength="3" maxlength="50">
             </div>
             <input type="submit" class="btn btn-primary" value="Simpan">
             <a class="btn btn-warning" href="index_pengrajin.php">Batal</a>
@@ -65,4 +65,5 @@ else{
 
     </div>
 </body>
+<script src="js/image-upload.js"></script>
 </html>

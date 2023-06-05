@@ -57,9 +57,9 @@ if(isset($_POST["submit"])){
     <form class="" action="" method="post" autocomplete="off">
       <h2>Login User</h2>
       <label for="">Username or Email : </label>
-      <input type="text" name="usernameemail" required value="" placeholder="Username.." maxlength="50"> <br>
+      <input type="text" name="usernameemail" required value="" placeholder="Username.." minlength="3" maxlength="50"> <br>
       <label for="">Password</label>
-      <input type="password" name="password" required value="" placeholder="Password.." maxlength="8"><br>
+      <input type="password" name="password" required value="" placeholder="Password.." minlength="3" maxlength="8"><br>
       <button type="submit" name="submit">Login</button>
       <a>Belum Punya akun? <a href="registration.php">Registrasi disini</a></a>
       

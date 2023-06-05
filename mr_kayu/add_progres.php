@@ -56,11 +56,11 @@ else{
             </div>
             <div class="mb-3">
                 <label for="deskripsi" class="form-label">Deskripsi Produk :</label>
-                <input style="background-color:chocolate; color:white" type="text" class="form-control" id="deskripsi" name="deskripsi" preadonly value="<?php echo $produk['deskripsi'] ?>" required>
+                <input style="background-color:chocolate; color:white" type="text" class="form-control" id="deskripsi" name="deskripsi" readonly value="<?php echo $produk['deskripsi'] ?>" required>
             </div>
             <div class="mb-3">
                 <label for="deskripsi" class="form-label">Tanggal Mulai :</label>
-                <input style="background-color:chocolate; color:white" type="text" class="form-control" id="deskripsi" name="deskripsi" preadonly value="<?php echo $Sekarang ?>" required>
+                <input style="background-color:chocolate; color:white" type="text" class="form-control" id="deskripsi" name="deskripsi" readonly value="<?php echo $Sekarang ?>" required>
             </div>
             <form method="post">
             <label for="deskripsi" class="form-label">Durasi Pengerjaan : </label>
@@ -79,7 +79,7 @@ else{
             <form action="proses.php?id_produk=<?php echo $produk['id'] ?>&tanggal_mulai=<?php echo $now ?>&prediksi=<?php echo $future ?>&id_users=<?php echo $user['id'] ?>&aksi=progres" enctype="multipart/form-data" method="post">
             <div class="mb-3">
                 <label for="deskripsi" class="form-label">Prediksi Selesai :</label>
-                <input style="background-color:chocolate; color:white" type="text" class="form-control" id="deskripsi" name="deskripsi" preadonly value="<?php echo $Prediksi ?>" required>
+                <input style="background-color:chocolate; color:white" type="text" class="form-control" id="deskripsi" name="deskripsi" readonly value="<?php echo $Prediksi ?>" required>
             </div>
             <label for="deskripsi" class="form-label">Tambahkan Foto Progres Awal(opsional) :</label>
             <div>

@@ -28,11 +28,11 @@
     <input type="hidden" name="id" value="<?php echo $akun['id'] ?>">
         <div class="mb-3">
             <label style="color:wheat" for="nama_product" class="form-label">Nama Produk</label>
-            <input type="text" class="form-control" id="nama_product" name="nama_product" placeholder="Nama product .." required value="<?php echo $akun['nama_product'] ?>">
+            <input type="text" class="form-control" id="nama_product" name="nama_product" placeholder="Nama product .." required value="<?php echo $akun['nama_product'] ?>" minlength="3" maxlength="50">
         </div>
         <div class="mb-3">
             <label style="color:wheat" for="deskripsi" class="form-label">Deskripsi</label>
-            <input type="text" class="form-control" id="deskripsi" name="deskripsi" placeholder="Deskripsi .." required value="<?php echo $akun['deskripsi'] ?>">
+            <input type="text" class="form-control" id="deskripsi" name="deskripsi" placeholder="Deskripsi .." required value="<?php echo $akun['deskripsi'] ?>" minlength="3" maxlength="50">
          </div>
         <input type="submit" class="btn btn-primary" value="Simpan">
         <a class="btn btn-warning" href="index_pengrajin.php">Batal</a>
